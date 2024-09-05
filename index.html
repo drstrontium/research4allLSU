@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research4All</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            background: linear-gradient(135deg, #FDD023 25%, #461D7C 100%);
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #6512c4;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            margin-bottom: 20px;
+            animation: slideDown 0.5s ease-in-out;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        /* Navigation Styles */
+        nav {
+            background-color: #222;
+            text-align: center;
+            padding: 10px 0;
+            margin-bottom: 20px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 15px 20px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #444;
+            color: #461D7C;
+        }
+
+        /* Tab Content Styles */
+        .tab-content {
+            display: none;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .tab-content.active {
+            display: block;
+            animation: fadeIn 1s ease-in-out;
+        }
+        .tab-content h2 {
+            font-size: 2rem;
+            margin-top: 0;
+            animation: fadeInUp 0.5s ease-in-out;
+        }
+        .tab-content p, .tab-content ul {
+            line-height: 1.8;
+            animation: fadeInUp 0.5s ease-in-out;
+        }
+        .tab-content ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .tab-content ul li {
+            margin-bottom: 10px;
+            animation: fadeInUp 0.5s ease-in-out;
+        }
+        .tab-content ul li a {
+            color: #333;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .tab-content ul li a:hover {
+            color: #c41230;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            box-shadow: 0 -4px 8px rgba(0,0,0,0.3);
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideDown {
+            from { transform: translateY(-100%); }
+            to { transform: translateY(0); }
+        }
+
+        @keyframes fadeInUp {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Research4All</h1>
+</header>
+
+<nav>
+    <a href="#" class="tablink" onclick="openTab(event, 'home')">Home</a>
+    <a href="#" class="tablink" onclick="openTab(event, 'labs')">Labs</a>
+    <a href="#" class="tablink" onclick="openTab(event, 'programs')">Programs</a>
+</nav>
+
+<div class="container">
+    <div id="home" class="tab-content active">
+        <h2>Welcome to Research4All</h2>
+        <p>Research4All is dedicated to fostering a community of learning and exploration among undergraduate students. Our mission is to provide access to research opportunities across various disciplines, allowing students to gain invaluable hands-on experience and contribute meaningfully to their academic and professional development.</p>
+        <p>Through partnerships with leading faculty members and research institutions, we aim to democratize access to research, making it accessible to all students regardless of background or financial resources.</p>
+    </div>
+
+    <div id="labs" class="tab-content">
+        <h2>Labs</h2>
+        <ul>
+            <li><a href="https://faculty.lsu.edu/avourekas/" target="_blank">Anastasios Vourekas' Lab in Biology</a></li>
+            <li><a href="https://thelattinlab.com" target="_blank">Christine Lattin's Lab in Biology</a></li>
+            <li><a href="https://www.lsu.edu/science/biosci/faculty-and-staff/faculty-pages/hart.php" target="_blank">Craig Hart's Lab in Biology</a></li>
+            <li><a href="https://www.lsu.edu/science/biosci/faculty-and-staff/faculty-pages/zhang.php" target="_blank">Fan Zhang's Lab in Biology</a></li>
+            <li><a href="https://www.dlilab.com" target="_blank">Daijiang Li's Lab in Biology</a></li>
+            <li><a href="https://www.lsu.edu/science/biosci/faculty-and-staff/faculty-pages/donzed.php" target="_blank">David Donze's Lab in Biology</a></li>
+            <li><a href="https://faculty.lsu.edu/dhomberger/about-me.php" target="_blank">Dominique Homberger's Lab in Biology</a></li>
+            <li><a href="https://garretthopper.wixsite.com/streamecology" target="_blank">Gaurav Kandlikar's Lab in Biology</a></li>
+            <li><a href="https://www.lsu.edu/science/biosci/faculty-and-staff/faculty-pages/waldrop.php" target="_blank">Grover Waldrop's Lab in Biology</a></li>
+            <li><a href="https://www.lsu.edu/science/biosci/faculty-and-staff/faculty-pages/ding.php" target="_blank">Huangen Ding's Lab in Biology</a></li>
+            <li><a href="https://esselstyn.github.io" target="_blank">Jacob Esselstyn's Lab in Biology</a></li>
+            <li><a href="https://www.jcronin.biology.lsu.edu" target="_blank">James Cronin's Lab in Biology</a></li>
+            <li><a href="https://phyleauxlab.github.io" target="_blank">Jeremy Brown's Lab in Biology</a></li>
+            <li><a href="https://jiaqitan.wixsite.com/mysite" target="_blank">Jiaqi Tan's Lab in Biology</a></li>
+            <li><a href="https://www.lsu.edu/science/biosci/faculty-and-staff/faculty-pages/larkin.php" target="_blank">John Larkin's Lab in Biology</a></li>
+            <li><a href="https://faculty.lsu.edu/johnsona/index.php" target="_blank">Alyssa Johnson's Lab in Biology</a></li>
+            <li><a href="https://jordandowell.github.io" target="_blank">Jordan Dowell's Lab in Biology</a></li>
+            <li><a href="https://www.lsu.edu/science/biosci/faculty-and-staff/faculty-pages/lagomarsino.php" target="_blank">Laura Lagomarsino's Lab in Biology</a></li>
+            <li><a href="https://www.lsugenomics.org" target="_blank">Maheshi Dassanayake's Lab in Biology</a></li>
+            <li><a href="https://biosci-batzerlab.biology.lsu.edu" target="_blank">Mark Batzer's Lab in Biology</a></li>
+            <li><a href="https://www.lsu.edu/science/biosci/faculty-and-staff/faculty-pages/kato.php" target="_blank">Naohiro Kato's Lab in Biology</a></li>
+            <li><a href="http://mason-lab.org" target="_blank">Nicholas Mason's Lab in Biology</a></li>
+            <li><a href="https://www.lsu.edu/science/biosci/faculty-and-staff/faculty-pages/schneider-p.php" target="_blank">Patricia Schneider's Lab in Biology</a></li>
+            <li><a href="https://www.lsu.edu/science/biosci/faculty-and-staff/faculty-pages/dimario.php" target="_blank">Patrick DiMario's Lab in Biology</a></li>
+            <li><a href="https://www.lsu.edu/science/biosci/faculty-and-staff/faculty-pages/lu.php" target="_blank">Rui Lu's Lab in Biology</a></li>
+            <li><a href="https://www.lsu.edu/science/biosci/faculty-and-staff/faculty-pages/cormier.php" target="_blank">Stephania Cormier's Lab in Biology</a></li>
+            <li><a href="https://www.lsu.edu/science/biosci/faculty-and-staff/faculty-pages/hand.php" target="_blank">Steven Hand's Lab in Biology</a></li>
+            <li><a href="https://www.lsu.edu/science/chemistry/faculty/clifton-wagner.php" target="_blank">Clifton Wagner's Lab in Chemistry</a></li>
+            <li><a href="https://faculty.lsu.edu/dhzhang/" target="_blank">Donghui Zhang's Lab in Chemistry</a></li>
+            <li><a href="https://faculty.lsu.edu/gjschneider/index.php" target="_blank">Gerald Schneider's Lab in Chemistry</a></li>
+            <li><a href="https://faculty.lsu.edu/vicente/index.php" target="_blank">Graca Vicente's Lab in Chemistry</a></li>
+            <li><a href="http://www.pojman.com/home/" target="_blank">John Pojman's Lab in Chemistry</a></li>
+            <li><a href="https://kermitmurray.com/research/" target="_blank">Kermit Murray's Lab in Chemistry</a></li>
+            <li><a href="https://faculty.lsu.edu/noemie/index.php" target="_blank">Noémie Elgrishi's Lab in Chemistry</a></li>
+            <li><a href="https://www.seminlee.com" target="_blank">Semin Lee's Lab in Chemistry</a></li>
+            <li><a href="https://faculty.lsu.edu/ragains/index.php" target="_blank">Justin Ragains' Lab in Chemistry</a></li>
+        </ul>
+        
+    </div>
+
+    <div id="programs" class="tab-content">
+        <h2>Programs</h2>
+        <ul>
+            <ul>
+              
+                <li><strong style="font-size: 1.5em;">STEM Research Opportunities</strong></li>
+                <ul>
+                    <li><a href="https://sse.tulane.edu/lbrn/summer-research-program" target="_blank">Louisiana Biomedical Research Network (LBRN) Summer Research Program at Tulane University</a></li>
+                    <li><a href="https://www.mdanderson.org/education-training/clinical-research-training/graduate-medical-education/summer-research-program.html" target="_blank">Summer Program in Cancer Research at MD Anderson</a></li>
+                    <li><a href="https://www.pbrc.edu/about/" target="_blank">Pennington Biomedical Research Center at Louisiana State University</a></li>
+                    <li><a href="https://www.bcm.edu/education/graduate-school-of-biomedical-sciences/degree-programs-and-certificates/student-development-programs/smart-program" target="_blank">SMART Program - Summer Medical and Research Training Program at Baylor College of Medicine</a></li>
+                    <li><a href="https://www.mdanderson.org/education-training/research-training/early-career-pathway-programs/summer-research-programs/programs/cprit-cure.html" target="_blank">CPRIT CURE Summer Undergraduate Program at MD Anderson</a></li>
+                </ul>
+            
+                <li><strong style="font-size: 1.5em;">Social Sciences and Humanities Research Opportunities</strong></li>
+                <ul>
+                    <li><a href="https://theleadershipalliance.org/summer-research-early-identification-program" target="_blank">Leadership Alliance Summer Research Early Identification Institute</a></li>
+                    <li><a href="https://www.rise.rutgers.edu/" target="_blank">Rutgers Undergraduate Summer Institute (RISE)</a></li>
+                    <li><a href="https://www.grad.uiowa.edu/diversity/SROP" target="_blank">SROP at University of Iowa</a></li>
+                    <li><a href="http://www.bsos.umd.edu/diversity/summer-research-initiative" target="_blank">U Maryland School of Behavioral and Social Sciences</a></li>
+                    <li><a href="https://btaa.org/resources-for/students/srop/how-to-apply" target="_blank">SROP-Gateway to Education at Big 10 Universities</a></li>
+                    <li><a href="https://grad.ucr.edu/register/MSRIP" target="_blank">UC Riverside Summer Mentoring Program</a></li>
+                    <li><a href="https://murap.unc.edu/fellow/summer-2023-information-session/" target="_blank">Moore Undergraduate Research Apprentice Program (MURAP) at UNC Chapel Hill</a></li>
+                    <li><a href="https://www.nsf.gov/crssprgm/reu/list_result.jsp?unitid=5054" target="_blank">National Science Foundation Summer Institutes</a></li>
+                    <li><a href="https://borderreu.nmsu.edu/" target="_blank">Collaborative Site Program on Immigration Policy and US-Mexico Border Communities at NMSU</a></li>
+                    <li><a href="https://u.osu.edu/blnsummer/" target="_blank">The Science of Language at Ohio University</a></li>
+                    <li><a href="https://www.unl.edu/summerprogram/health" target="_blank">Community-Engaged Training for Advancing Health Equity at University of Nebraska-Lincoln</a></li>
+                    <li><a href="https://lab.vanderbilt.edu/political-science-reu/" target="_blank">Summer Program in Accountability, Behavior & Conflict in Democratic Politics at Vanderbilt University</a></li>
+                    <li><a href="http://www.americanbarfoundation.org/research/Fellowshipopportunities/Summer_Undergraduate_Research_Fellowship_Program.html" target="_blank">Montgomery Summer Research Diversity Fellows in Law and Social Sciences at American Bar Foundation</a></li>
+                    <li><a href="https://www.apsanet.org/DIVERSITY/Ralph-Bunche-Summer-Institute" target="_blank">APSA Ralph Bunche Summer Institute</a></li>
+                    <li><a href="https://hertogfoundation.org/programs/political-studies" target="_blank">Hertog Foundation Political Studies</a></li>
+                    <li><a href="https://rangelprogram.org/summer-enrichment-program/overview-eligibility/" target="_blank">Charles B. Rangel Summer Enrichment Program</a></li>
+                    <li><a href="https://ppiaprogram.org/page/junior-summer-institute" target="_blank">PPIA Junior Summer Institutes</a></li>
+                    <li><a href="https://www.nypl.org/help/about-nypl/fellowships-institutes/schomburg-mellon-humanities-summer-institute" target="_blank">Schomburg-Mellon Humanities Summer Institute at New York Public Library</a></li>
+                    <li><a href="https://librarycompany.org/mellon-scholars-internship-workshop-program-2/" target="_blank">Mellon Scholars Summer Internship and Workshop at Library Company of Philadelphia</a></li>
+                </ul>
+            </ul>
+            
+            </ul>
+        </ul>
+        
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Research4All. All rights reserved.</p>
+</footer>
+
+<script>
+    function openTab(evt, tabName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tab-content");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+
+    // Default open tab
+    document.getElementsByClassName("tablink")[0].click();
+</script>
+
+</body>
+</html>
